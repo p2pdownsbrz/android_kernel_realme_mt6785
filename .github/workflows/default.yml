@@ -58,7 +58,7 @@ jobs:
       - name: Setup Release Kernel
         uses: marvinpinto/action-automatic-releases@latest
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GH_TOKEN }}
           automatic_release_tag: "Default"
           prerelease: false
           title: psionic-kernel-RM6785-${{ env.RELEASE_DATE }}-${{ env.VERSION_KERNEL }}
